@@ -1,6 +1,7 @@
 cloudpickle
 dill
 pytest
+ray
 ./annotations_example
 ./cloudpickle_example
 ./defaults_example

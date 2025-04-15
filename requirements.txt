@@ -1,5 +1,7 @@
+cloudpickle
 dill
 pytest
-./annotations
-./defaults
-./namespace_package
+./annotations_example
+./cloudpickle_example
+./defaults_example
+./namespace_package_example

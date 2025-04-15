@@ -30,6 +30,16 @@ functions, but not for nested ones.
 pytest tests/test_annotations.py
 ```
 
+### cloudpickle
+
+This folder contains code from all the other examples, but uses cloudpickle
+instead of dill to pickle the compiled functions, and does not make use of the
+Nuitka dill plugin. Most examples actually work fine here, except for the
+nested defaults which complains about an unknown opcode.
+```shell
+pytest tests/test_cloudpickle.py
+```
+
 ### defaults
 
 This folder contains an example of accessing the `__defaults__` of a function

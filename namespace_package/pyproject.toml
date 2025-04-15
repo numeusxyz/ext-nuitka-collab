@@ -1,0 +1,14 @@
+[project]
+name = 'numeus-namespace-package'
+version = '1'
+requires-python = '==3.10.*'
+
+[build-system]
+requires = ['dill', 'nuitka', 'setuptools', 'toml', 'wheel']
+build-backend = 'nuitka.distutils.Build'
+
+[tool.setuptools.packages.find]
+include = ['numeus.package*']
+
+[tool.nuitka]
+enable-plugin = 'dill-compat'

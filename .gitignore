@@ -1,0 +1,40 @@
+# build
+*.egg-info
+*.so
+*.whl
+build/
+dist/
+pip-wheel-metadata/
+
+# cache
+__pycache__/
+.benchmarks
+.coverage
+.coverage.*
+.pycache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# dev
+.dev/
+
+# jupyter
+.ipynb_checkpoints
+.jupyterlogs
+.virtual_documents/
+
+# mac
+*.DS_Store
+.Trash-*/
+
+# pycharm
+.idea/
+
+# venv
+.venv/
+.local/
+venv/
+
+# data
+notebooks/**/*.csv

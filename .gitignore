@@ -5,6 +5,7 @@
 build/
 dist/
 pip-wheel-metadata/
+*.pyi
 
 # cache
 __pycache__/

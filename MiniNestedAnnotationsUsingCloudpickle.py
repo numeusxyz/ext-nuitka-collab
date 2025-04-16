@@ -3,7 +3,7 @@ import cloudpickle, inspect, typing
 
 def f():
     def annotated(a: str, b: int) -> int:
-        pass
+        return a, b
 
     return annotated
 
@@ -19,8 +19,8 @@ def test_cloudpickle_annotations():
 
     assert signature == pickled_signature
     assert annotations == pickled_annotations
-
-    print(pickled_annotations)
+    print(type(annotated), type(pickled_obj))
+    assert(annotated(1,2) == pickled_obj(1,2))
 
 test_cloudpickle_annotations()
 

@@ -4,7 +4,13 @@ version = '1'
 requires-python = '==3.10.*'
 
 [build-system]
-requires = ['dill', 'nuitka', 'setuptools', 'toml', 'wheel']
+requires = [
+    'dill',
+    'nuitka @ https://github.com/Nuitka/Nuitka/archive/factory.zip',
+    'setuptools',
+    'toml',
+    'wheel',
+]
 build-backend = 'nuitka.distutils.Build'
 
 [tool.setuptools.packages.find]

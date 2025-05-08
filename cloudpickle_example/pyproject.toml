@@ -5,9 +5,8 @@ requires-python = '==3.10.*'
 
 [build-system]
 requires = [
-    'cloudpickle',
-    'dill',
-    'nuitka @ https://github.com/Nuitka/Nuitka/archive/factory.zip',
+    'nuitka==2.7.1',
+    #    'nuitka @ https://github.com/Nuitka/Nuitka/archive/factory.zip',
     'setuptools',
     'toml',
     'wheel',
@@ -19,4 +18,3 @@ include = ['numeus.cloudpickle*']
 
 [tool.nuitka]
 enable-plugin = 'dill-compat'
-include-pickle-support-module = 'cloudpickle'

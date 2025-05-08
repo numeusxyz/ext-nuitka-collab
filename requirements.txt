@@ -2,6 +2,7 @@ cloudpickle
 dill
 pytest
 ray
+nuitka
 ./annotations_example
 ./cloudpickle_example
 ./defaults_example

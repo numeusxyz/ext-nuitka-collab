@@ -1,0 +1,20 @@
+[project]
+name = 'numeus-decorator-package'
+version = '1'
+requires-python = '==3.10.*'
+
+[build-system]
+requires = [
+    'nuitka==2.7.1',
+    #    'nuitka @ https://github.com/Nuitka/Nuitka/archive/factory.zip',
+    'setuptools',
+    'toml',
+    'wheel',
+]
+build-backend = 'nuitka.distutils.Build'
+
+[tool.setuptools.packages.find]
+include = ['numeus.decorator*']
+
+[tool.nuitka]
+enable-plugin = 'dill-compat'
